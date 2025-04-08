@@ -84,18 +84,5 @@ while running:
     screen.blit(drawing_surface, (0, 0))
     pygame.display.update()
 
-    # 按鍵控制
-    keys = pygame.key.get_pressed()
-
-'''                  
-    if keys[pygame.K_SPACE]:  # 按空白鍵開始辨識
-        image = preprocess_image(drawing_surface)  # 處理影像
-        prediction = model.predict(image)  # 預測
-        predicted_digit = np.argmax(prediction)  # 取得預測結果
-
-        print(f"Predicted digit: {predicted_digit}")
-        pygame.display.set_caption(f"Predicted: {predicted_digit}")
-        drawing_surface.fill(BLACK)
-  '''
 # 關閉 Pygame
 pygame.quit()
